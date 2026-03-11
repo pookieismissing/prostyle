@@ -1,10 +1,3 @@
-/* ============================================
-   PROSTYLE HAIRCUTTING SERVICES
-   QE&P — Quality, Excellence & Professionalism
-   Since 1996
-   PSST! — ProStyle Shop Talk
-   ============================================ */
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Oswald:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=Special+Elite&display=swap');
 
 :root {
@@ -17,10 +10,10 @@
   --black: #0D0D0D;
   --ink: #1A1A1A;
   --charcoal: #262626;
-  --graphite: #333;
+  --graphite: #333333;
   --slate: #4A4A4A;
   --pewter: #6B6B6B;
-  --silver: #999;
+  --silver: #999999;
   --ash: #B5B5B5;
   --fog: #D4D4D4;
   --cream: #F5F0E8;
@@ -29,173 +22,890 @@
   --gold: #C9A84C;
 }
 
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;font-size:17px}
-body{font-family:'Source Serif 4','Georgia',serif;background:var(--cream);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
-a{color:var(--red);text-decoration:none;transition:color 0.2s}
-a:hover{color:var(--red-bright)}
-img{max-width:100%;display:block}
-
-h1,h2,h3,h4{font-family:'Playfair Display','Georgia',serif;line-height:1.1;color:var(--black)}
-h1{font-size:clamp(2.6rem,6vw,4.5rem);font-weight:900}
-h2{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700}
-h3{font-size:clamp(1.2rem,2vw,1.5rem);font-weight:700}
-h4{font-size:1.05rem;font-weight:600}
-
-/* --- MASTHEAD --- */
-.masthead{background:var(--black);color:var(--cream);border-bottom:4px solid var(--red);position:fixed;top:0;left:0;right:0;z-index:1000}
-.masthead-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:60px}
-.mast-brand{display:flex;align-items:baseline;gap:0.3rem;color:var(--cream)}
-.mast-brand .pro{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:0.08em;background:var(--red);color:var(--cream);padding:1px 6px;line-height:1.3}
-.mast-brand .sty{font-family:'Playfair Display',serif;font-style:italic;font-size:1.3rem;font-weight:700;color:var(--cream)}
-.nav-links{display:flex;list-style:none;gap:0}
-.nav-links a{display:block;padding:0.35rem 0.85rem;font-family:'Oswald',sans-serif;font-size:0.7rem;font-weight:500;text-transform:uppercase;letter-spacing:0.16em;color:var(--ash);transition:color 0.2s}
-.nav-links a:hover,.nav-links a.active{color:var(--cream)}
-.nav-links .book-link{background:var(--red);color:var(--cream)!important;margin-left:0.4rem;padding:0.35rem 0.9rem;font-weight:600}
-.nav-links .book-link:hover{background:var(--red-mid)}
-.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:0.5rem}
-.nav-toggle span{display:block;width:22px;height:2px;background:var(--cream);margin:5px 0}
-
-/* --- FRAME --- */
-.page-frame{max-width:1100px;margin:0 auto;padding:0 1.5rem}
-
-/* --- FRONT BANNER --- */
-.front-banner{margin-top:60px;background:var(--black);color:var(--cream);text-align:center;padding:4.5rem 2rem 3.5rem;position:relative;overflow:hidden}
-.front-banner::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(255,255,255,0.02) 3px,rgba(255,255,255,0.02) 4px);pointer-events:none}
-.front-banner>*{position:relative;z-index:1}
-.front-banner .edition{font-family:'Oswald',sans-serif;font-size:0.6rem;letter-spacing:0.4em;text-transform:uppercase;color:var(--silver);margin-bottom:0.75rem}
-.front-banner h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,13vw,9.5rem);color:var(--cream);line-height:0.88;letter-spacing:0.03em}
-.front-banner h1 .red{color:var(--red-bright)}
-.front-banner .subtitle{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1rem,2.5vw,1.35rem);color:var(--silver);margin-top:0.4rem;font-weight:400}
-.front-banner .since{display:inline-block;margin-top:1.5rem;font-family:'Oswald',sans-serif;font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--cyan);border:1px solid var(--cyan-dark);padding:0.3rem 1.4rem}
-
-/* --- QE&P BAR --- */
-.qep-bar{background:var(--red);color:var(--cream);text-align:center;padding:0.8rem 1rem}
-.qep-bar span{font-family:'Oswald',sans-serif;font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase}
-
-/* --- RULES --- */
-.rule{width:100%;height:1px;background:var(--black);margin:0.75rem 0}
-.rule-thick{height:3px}
-.rule-double{height:0;border-top:3px solid var(--black);border-bottom:1px solid var(--black);padding-top:3px;margin:0.75rem 0}
-.rule-red{background:var(--red);border-color:var(--red)}
-.rule-dotted{height:0;border:none;border-top:1px dotted var(--pewter);margin:0.75rem 0}
-
-/* --- COLUMNS --- */
-.cols-2{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
-.cols-aside{display:grid;grid-template-columns:5fr 3fr;gap:2.5rem}
-.col-rule{border-right:1px solid var(--fog);padding-right:2.5rem}
-
-/* --- SECTION --- */
-.section{padding:2.5rem 0}
-.section-header{margin-bottom:1.5rem}
-.section-header .dek{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;color:var(--slate);font-size:1rem}
-.section-header .byline{font-family:'Oswald',sans-serif;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--pewter);margin-top:0.35rem}
-
-/* --- PAGE HEADER (inner) --- */
-.page-header{margin-top:60px;background:var(--black);color:var(--cream);padding:3.5rem 1.5rem 2.5rem;text-align:center}
-.page-header h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,8vw,5.5rem);color:var(--cream);letter-spacing:0.04em;line-height:0.95}
-.page-header .dek{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;color:var(--silver);font-size:1.05rem;margin-top:0.5rem}
-
-/* --- HOURS BOX --- */
-.hours-box{background:var(--black);color:var(--cream);padding:1.75rem;border:2px solid var(--black)}
-.hours-box h3{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:0.08em;color:var(--cyan);margin-bottom:0.6rem}
-.hours-row{display:flex;justify-content:space-between;align-items:baseline;padding:0.35rem 0;border-bottom:1px dotted var(--graphite);font-size:0.85rem}
-.hours-row:last-child{border-bottom:none}
-.hours-day{font-family:'Oswald',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:0.06em;font-size:0.8rem}
-.hours-time{color:var(--ash);font-family:'Source Serif 4',serif;font-size:0.82rem}
-.hours-note{display:block;font-size:0.68rem;color:var(--cyan);margin-top:1px;font-style:italic}
-.hours-closed{color:var(--red-bright)}
-
-/* --- SERVICE BLOCKS --- */
-.service-block{padding:1.75rem 0;border-bottom:1px solid var(--fog)}
-.service-block:last-child{border-bottom:none}
-.service-name{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:0.03em;color:var(--red);line-height:1;margin-bottom:0.1rem}
-.service-desc{font-family:'Playfair Display',serif;font-style:italic;color:var(--slate);font-size:0.92rem;margin-bottom:0.5rem;line-height:1.4}
-.service-option{margin-top:1rem}
-.service-option-label{font-family:'Oswald',sans-serif;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--cream);background:var(--charcoal);display:inline-block;padding:0.15rem 0.6rem;margin-bottom:0.5rem}
-.service-option-label.popular::after{content:' \2014  MOST REQUESTED';color:var(--cyan)}
-.service-list{list-style:none;padding:0}
-.service-list li{padding:0.25rem 0 0.25rem 1.3rem;position:relative;font-size:0.88rem;line-height:1.5;color:var(--graphite)}
-.service-list li::before{content:'';position:absolute;left:0;top:0.6rem;width:5px;height:5px;background:var(--red)}
-.service-list li strong{color:var(--black)}
-.service-note{font-size:0.78rem;color:var(--pewter);font-style:italic;margin-top:0.4rem;padding-left:1.3rem}
-.service-note-important{font-size:0.82rem;color:var(--red);font-weight:600;font-style:normal;margin-top:0.4rem;padding-left:1.3rem}
-
-/* --- PULL QUOTE --- */
-.pull-quote{border-left:4px solid var(--red);padding:1rem 1.25rem;margin:1.25rem 0;background:var(--ivory)}
-.pull-quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;line-height:1.55;color:var(--graphite)}
-.pull-quote .attr{font-family:'Oswald',sans-serif;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--pewter);margin-top:0.35rem;display:block}
-
-/* --- GALLERY --- */
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
-.gallery-slot{aspect-ratio:1;background:var(--charcoal);display:flex;align-items:center;justify-content:center;color:var(--slate);font-family:'Oswald',sans-serif;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.15em;border:1px dashed var(--slate)}
-
-/* --- CONTACT --- */
-.contact-pair{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
-.contact-block h4{font-family:'Oswald',sans-serif;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--pewter);margin-bottom:0.2rem;font-weight:500}
-.contact-block p{font-size:0.95rem;color:var(--ink);line-height:1.6}
-.map-frame{width:100%;min-height:380px;border:2px solid var(--black)}
-.map-frame iframe{width:100%;height:100%;min-height:380px;border:none}
-
-/* --- BOOKING --- */
-.booking-frame{background:var(--white);border:2px solid var(--black);max-width:900px;margin:0 auto}
-.booking-frame iframe{width:100%;min-height:700px;border:none;display:block}
-
-/* --- BUTTONS --- */
-.btn{display:inline-block;font-family:'Oswald',sans-serif;font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.18em;padding:0.7rem 1.8rem;border:none;cursor:pointer;transition:all 0.2s}
-.btn-red{background:var(--red);color:var(--cream)}
-.btn-red:hover{background:var(--red-mid);color:var(--cream)}
-.btn-black{background:var(--black);color:var(--cream)}
-.btn-black:hover{background:var(--charcoal);color:var(--cream)}
-
-/* --- PORTRAIT --- */
-.portrait-slot{aspect-ratio:3/4;background:var(--charcoal);border:1px dashed var(--slate);display:flex;align-items:center;justify-content:center;color:var(--slate);font-family:'Oswald',sans-serif;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em}
-.stat-row{display:flex;gap:2.5rem;margin-top:1.25rem}
-.stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.6rem;color:var(--red);line-height:1}
-.stat-label{font-family:'Oswald',sans-serif;font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--pewter);margin-top:0.1rem}
-
-/* --- POLICIES --- */
-.policy-item{display:flex;gap:0.75rem;padding:0.85rem 0;border-bottom:1px dotted var(--fog);align-items:flex-start}
-.policy-item:last-child{border-bottom:none}
-.policy-num{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--red);line-height:1;flex-shrink:0;width:1.5rem;text-align:center}
-.policy-text{color:var(--graphite);font-size:0.92rem;line-height:1.55}
-
-/* --- TUESDAY --- */
-.tuesday-banner{background:var(--cyan-dark);color:var(--cream);text-align:center;padding:1.5rem 1.5rem}
-.tuesday-banner h3{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.4rem,3vw,2rem);color:var(--cream);letter-spacing:0.06em}
-.tuesday-banner p{font-family:'Playfair Display',serif;font-style:italic;color:rgba(255,255,255,0.8);font-size:0.9rem;margin-top:0.15rem}
-
-/* --- CTA STRIP --- */
-.cta-strip{background:var(--red);color:var(--cream);text-align:center;padding:2.5rem 1.5rem}
-.cta-strip h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);color:var(--cream);letter-spacing:0.04em;margin-bottom:0.35rem}
-.cta-strip p{font-family:'Playfair Display',serif;font-style:italic;color:rgba(255,255,255,0.8);margin-bottom:1.25rem;font-size:0.95rem}
-
-/* --- FOOTER --- */
-.site-footer{background:var(--black);color:var(--ash);border-top:4px solid var(--red);margin-top:0}
-.footer-inner{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 1rem;display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem}
-.footer-brand p{font-size:0.78rem;color:var(--pewter);line-height:1.5;font-family:'Source Serif 4',serif;margin-top:0.4rem}
-.footer-nav h4,.footer-contact-col h4{font-family:'Oswald',sans-serif;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--pewter);margin-bottom:0.6rem;font-weight:500}
-.footer-nav ul{list-style:none;display:flex;flex-direction:column;gap:0.25rem}
-.footer-nav ul a{color:var(--ash);font-size:0.82rem;font-family:'Source Serif 4',serif}
-.footer-nav ul a:hover{color:var(--cream)}
-.footer-contact-col p{font-size:0.82rem;color:var(--ash);margin-bottom:0.2rem;font-family:'Source Serif 4',serif}
-.footer-contact-col a{color:var(--cyan)}
-.footer-contact-col a:hover{color:var(--cream)}
-.footer-bottom{max-width:1100px;margin:0 auto;padding:0.75rem 1.5rem;border-top:1px solid var(--charcoal);font-size:0.65rem;color:var(--slate);font-family:'Oswald',sans-serif;letter-spacing:0.1em}
-
-/* --- RESPONSIVE --- */
-@media(max-width:900px){
-  .cols-2,.cols-aside,.contact-pair{grid-template-columns:1fr}
-  .col-rule{border-right:none;padding-right:0;border-bottom:1px solid var(--fog);padding-bottom:2rem}
-  .footer-inner{grid-template-columns:1fr}
-  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@media(max-width:600px){
-  html{font-size:16px}
-  .nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:var(--black);flex-direction:column;padding:0.5rem 0;border-bottom:3px solid var(--red)}
-  .nav-links.open{display:flex}
-  .nav-links a{padding:0.55rem 1.5rem}
-  .nav-toggle{display:block}
-  .stat-row{gap:1.25rem}
-  .gallery-grid{grid-template-columns:1fr 1fr}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 17px;
+}
+
+body {
+  font-family: 'Source Serif 4', 'Georgia', serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--red);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--red-bright);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  line-height: 1.1;
+  color: var(--black);
+}
+
+h1 { font-size: clamp(2.6rem, 6vw, 4.5rem); font-weight: 900; }
+h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 700; }
+h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 700; }
+h4 { font-size: 1.05rem; font-weight: 600; }
+
+/* MASTHEAD */
+
+.masthead {
+  background: var(--black);
+  color: var(--cream);
+  border-bottom: 4px solid var(--red);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.masthead-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  height: 60px;
+}
+
+.mast-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  color: var(--cream);
+}
+
+.mast-brand .pro {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  background: var(--red);
+  color: var(--cream);
+  padding: 1px 6px;
+  line-height: 1.3;
+}
+
+.mast-brand .sty {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--cream);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 0;
+}
+
+.nav-links a {
+  display: block;
+  padding: 0.35rem 0.85rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ash);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--cream);
+}
+
+.nav-links .book-link {
+  background: var(--red);
+  color: var(--cream) !important;
+  margin-left: 0.4rem;
+  padding: 0.35rem 0.9rem;
+  font-weight: 600;
+}
+
+.nav-links .book-link:hover {
+  background: var(--red-mid);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--cream);
+  margin: 5px 0;
+}
+
+/* PAGE FRAME */
+
+.page-frame {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* FRONT BANNER */
+
+.front-banner {
+  margin-top: 60px;
+  background: var(--black);
+  color: var(--cream);
+  text-align: center;
+  padding: 4.5rem 2rem 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.front-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255,255,255,0.02) 3px, rgba(255,255,255,0.02) 4px);
+  pointer-events: none;
+}
+
+.front-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+.front-banner .edition {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--silver);
+  margin-bottom: 0.75rem;
+}
+
+.front-banner h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(4rem, 13vw, 9.5rem);
+  color: var(--cream);
+  line-height: 0.88;
+  letter-spacing: 0.03em;
+}
+
+.front-banner h1 .red {
+  color: var(--red-bright);
+}
+
+.front-banner .subtitle {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  color: var(--silver);
+  margin-top: 0.4rem;
+  font-weight: 400;
+}
+
+.front-banner .since {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  border: 1px solid var(--cyan-dark);
+  padding: 0.3rem 1.4rem;
+}
+
+/* QE&P BAR */
+
+.qep-bar {
+  background: var(--red);
+  color: var(--cream);
+  text-align: center;
+  padding: 0.8rem 1rem;
+}
+
+.qep-bar span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+/* RULES */
+
+.rule {
+  width: 100%;
+  height: 1px;
+  background: var(--black);
+  margin: 0.75rem 0;
+}
+
+.rule-thick {
+  height: 3px;
+}
+
+.rule-double {
+  height: 0;
+  border-top: 3px solid var(--black);
+  border-bottom: 1px solid var(--black);
+  padding-top: 3px;
+  margin: 0.75rem 0;
+}
+
+.rule-red {
+  background: var(--red);
+  border-color: var(--red);
+}
+
+.rule-dotted {
+  height: 0;
+  border: none;
+  border-top: 1px dotted var(--pewter);
+  margin: 0.75rem 0;
+}
+
+/* COLUMNS */
+
+.cols-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.cols-aside {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  gap: 2.5rem;
+}
+
+.col-rule {
+  border-right: 1px solid var(--fog);
+  padding-right: 2.5rem;
+}
+
+/* SECTION */
+
+.section {
+  padding: 2.5rem 0;
+}
+
+.section-header {
+  margin-bottom: 1.5rem;
+}
+
+.section-header .dek {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--slate);
+  font-size: 1rem;
+}
+
+.section-header .byline {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--pewter);
+  margin-top: 0.35rem;
+}
+
+/* PAGE HEADER (inner pages) */
+
+.page-header {
+  margin-top: 60px;
+  background: var(--black);
+  color: var(--cream);
+  padding: 3.5rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  color: var(--cream);
+  letter-spacing: 0.04em;
+  line-height: 0.95;
+}
+
+.page-header .dek {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--silver);
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+}
+
+/* HOURS BOX */
+
+.hours-box {
+  background: var(--black);
+  color: var(--cream);
+  padding: 1.75rem;
+  border: 2px solid var(--black);
+}
+
+.hours-box h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.08em;
+  color: var(--cyan);
+  margin-bottom: 0.6rem;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.35rem 0;
+  border-bottom: 1px dotted var(--graphite);
+  font-size: 0.85rem;
+}
+
+.hours-row:last-child {
+  border-bottom: none;
+}
+
+.hours-day {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+}
+
+.hours-time {
+  color: var(--ash);
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.82rem;
+}
+
+.hours-note {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--cyan);
+  margin-top: 1px;
+  font-style: italic;
+}
+
+.hours-closed {
+  color: var(--red-bright);
+}
+
+/* SERVICE BLOCKS */
+
+.service-block {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--fog);
+}
+
+.service-block:last-child {
+  border-bottom: none;
+}
+
+.service-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+  color: var(--red);
+  line-height: 1;
+  margin-bottom: 0.1rem;
+}
+
+.service-desc {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--slate);
+  font-size: 0.92rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.service-option {
+  margin-top: 1rem;
+}
+
+.service-option-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: var(--charcoal);
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-option-label.popular::after {
+  content: ' \2014  MOST REQUESTED';
+  color: var(--cyan);
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  padding: 0.25rem 0 0.25rem 1.3rem;
+  position: relative;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--graphite);
+}
+
+.service-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 5px;
+  height: 5px;
+  background: var(--red);
+}
+
+.service-list li strong {
+  color: var(--black);
+}
+
+.service-note {
+  font-size: 0.78rem;
+  color: var(--pewter);
+  font-style: italic;
+  margin-top: 0.4rem;
+  padding-left: 1.3rem;
+}
+
+.service-note-important {
+  font-size: 0.82rem;
+  color: var(--red);
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 0.4rem;
+  padding-left: 1.3rem;
+}
+
+/* PULL QUOTE */
+
+.pull-quote {
+  border-left: 4px solid var(--red);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  background: var(--ivory);
+}
+
+.pull-quote p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--graphite);
+}
+
+.pull-quote .attr {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--pewter);
+  margin-top: 0.35rem;
+  display: block;
+}
+
+/* GALLERY */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.gallery-slot {
+  aspect-ratio: 1;
+  background: var(--charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--slate);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border: 1px dashed var(--slate);
+}
+
+/* CONTACT */
+
+.contact-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.contact-block h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--pewter);
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.contact-block p {
+  font-size: 0.95rem;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.map-frame {
+  width: 100%;
+  min-height: 380px;
+  border: 2px solid var(--black);
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  border: none;
+}
+
+/* BOOKING */
+
+.booking-frame {
+  background: var(--white);
+  border: 2px solid var(--black);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.booking-frame iframe {
+  width: 100%;
+  min-height: 700px;
+  border: none;
+  display: block;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  padding: 0.7rem 1.8rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-red {
+  background: var(--red);
+  color: var(--cream);
+}
+
+.btn-red:hover {
+  background: var(--red-mid);
+  color: var(--cream);
+}
+
+.btn-black {
+  background: var(--black);
+  color: var(--cream);
+}
+
+.btn-black:hover {
+  background: var(--charcoal);
+  color: var(--cream);
+}
+
+/* PORTRAIT */
+
+.portrait-slot {
+  aspect-ratio: 3 / 4;
+  background: var(--charcoal);
+  border: 1px dashed var(--slate);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--slate);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.stat-row {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 1.25rem;
+}
+
+.stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.6rem;
+  color: var(--red);
+  line-height: 1;
+}
+
+.stat-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--pewter);
+  margin-top: 0.1rem;
+}
+
+/* POLICIES */
+
+.policy-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px dotted var(--fog);
+  align-items: flex-start;
+}
+
+.policy-item:last-child {
+  border-bottom: none;
+}
+
+.policy-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  color: var(--red);
+  line-height: 1;
+  flex-shrink: 0;
+  width: 1.5rem;
+  text-align: center;
+}
+
+.policy-text {
+  color: var(--graphite);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+/* TUESDAY BANNER */
+
+.tuesday-banner {
+  background: var(--cyan-dark);
+  color: var(--cream);
+  text-align: center;
+  padding: 1.5rem 1.5rem;
+}
+
+.tuesday-banner h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--cream);
+  letter-spacing: 0.06em;
+}
+
+.tuesday-banner p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
+}
+
+/* CTA STRIP */
+
+.cta-strip {
+  background: var(--red);
+  color: var(--cream);
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.cta-strip h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--cream);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+}
+
+.cta-strip p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+/* FOOTER */
+
+.site-footer {
+  background: var(--black);
+  color: var(--ash);
+  border-top: 4px solid var(--red);
+  margin-top: 0;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.footer-brand p {
+  font-size: 0.78rem;
+  color: var(--pewter);
+  line-height: 1.5;
+  font-family: 'Source Serif 4', serif;
+  margin-top: 0.4rem;
+}
+
+.footer-nav h4,
+.footer-contact-col h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--pewter);
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.footer-nav ul a {
+  color: var(--ash);
+  font-size: 0.82rem;
+  font-family: 'Source Serif 4', serif;
+}
+
+.footer-nav ul a:hover {
+  color: var(--cream);
+}
+
+.footer-contact-col p {
+  font-size: 0.82rem;
+  color: var(--ash);
+  margin-bottom: 0.2rem;
+  font-family: 'Source Serif 4', serif;
+}
+
+.footer-contact-col a {
+  color: var(--cyan);
+}
+
+.footer-contact-col a:hover {
+  color: var(--cream);
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  border-top: 1px solid var(--charcoal);
+  font-size: 0.65rem;
+  color: var(--slate);
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .cols-2,
+  .cols-aside,
+  .contact-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .col-rule {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid var(--fog);
+    padding-bottom: 2rem;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    flex-direction: column;
+    padding: 0.5rem 0;
+    border-bottom: 3px solid var(--red);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.55rem 1.5rem;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .stat-row {
+    gap: 1.25rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
