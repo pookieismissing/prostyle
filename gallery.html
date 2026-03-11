@@ -4,144 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery — ProStyle Haircutting Services</title>
-  <meta name="description" content="See the work at ProStyle Haircutting Services — fades, lineups, beard trims, and more from New Haven's top-rated barbershop.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="site-nav">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-brand">
-        <span class="pro">PRO</span><span class="style">Style</span>
-      </a>
-      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+  <nav class="masthead">
+    <div class="masthead-inner">
+      <a href="index.html" class="mast-brand"><span class="pro">PRO</span><span class="sty">Style</span></a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="gallery.html" class="active">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="booking.html" class="nav-book-btn">Book Now</a></li>
+        <li><a href="booking.html" class="book-link">Book Now</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <div class="page-hero">
-    <h1 class="display-font fade-up">Gallery</h1>
-    <p class="fade-up fade-up-delay-1">The work speaks for itself</p>
-  </div>
+  <header class="page-header">
+    <h1>Gallery</h1>
+    <div class="dek">From the Chair</div>
+  </header>
 
-  <!-- GALLERY -->
-  <section class="section">
-    <div class="section-header">
-      <h2>Recent Work</h2>
-      <div class="rule"></div>
-      <p>Cuts, fades, and finishes from the chair</p>
-    </div>
+  <main class="page-frame">
+    <div class="rule-double"></div>
 
-    <div class="gallery-grid">
+    <div class="section">
 
       <!--
-        PLACEHOLDER GALLERY ITEMS
-        Replace each .gallery-placeholder with an <img> tag pointing to actual photos.
-        Example:
-        <div class="gallery-item">
-          <img src="images/cut-01.jpg" alt="Skin fade with beard lineup" style="width:100%;height:100%;object-fit:cover;">
+        PHOTO GALLERY
+        Replace each .gallery-slot with:
+        <div class="gallery-slot" style="border:none;">
+          <img src="images/cut-01.jpg" alt="Description" style="width:100%;height:100%;object-fit:cover;">
         </div>
       -->
 
-      <div class="gallery-item">
-        <div class="gallery-placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-          <span>Photo 1</span>
-        </div>
+      <div class="gallery-grid">
+        <div class="gallery-slot">Photo 1</div>
+        <div class="gallery-slot">Photo 2</div>
+        <div class="gallery-slot">Photo 3</div>
+        <div class="gallery-slot">Photo 4</div>
+        <div class="gallery-slot">Photo 5</div>
+        <div class="gallery-slot">Photo 6</div>
+        <div class="gallery-slot">Photo 7</div>
+        <div class="gallery-slot">Photo 8</div>
+        <div class="gallery-slot">Photo 9</div>
       </div>
 
-      <div class="gallery-item">
-        <div class="gallery-placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-          <span>Photo 2</span>
-        </div>
-      </div>
+      <p style="text-align:center;color:var(--pewter);margin-top:2rem;font-size:0.85rem;font-style:italic;">
+        Photos of cuts and the shop are on the way. In the meantime, check the Google reviews for client photos, or follow ProStyle on social media.
+      </p>
 
-      <div class="gallery-item">
-        <div class="gallery-placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-          <span>Photo 3</span>
-        </div>
-      </div>
+      <div class="rule-dotted" style="margin-top:2rem;"></div>
 
-      <div class="gallery-item">
-        <div class="gallery-placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-          <span>Photo 4</span>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-          <span>Photo 5</span>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-          <span>Photo 6</span>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-          <span>Photo 7</span>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-          <span>Photo 8</span>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-          <span>Photo 9</span>
-        </div>
+      <div class="pull-quote" style="max-width:600px;margin:1.5rem auto 0;">
+        <p>"Genuinely one of the best haircut experiences I've ever had. This man deserves his flowers."</p>
+        <span class="attr">— Google Review</span>
       </div>
 
     </div>
+  </main>
 
-    <p style="text-align: center; color: var(--gray-400); margin-top: 3rem; font-size: 0.9rem; font-style: italic;">
-      <!-- PLACEHOLDER NOTE: Gallery photos need to be provided by Octavious. Swap out the placeholder divs above with actual images. -->
-      Gallery photos coming soon. Follow ProStyle on social media for the latest work.
-    </p>
-  </section>
-
-  <!-- CTA -->
-  <div style="background: var(--red); padding: 4rem 2rem; text-align: center;">
-    <h2 class="display-font" style="font-size: clamp(2rem, 4vw, 3rem); color: var(--white); margin-bottom: 0.5rem;">Like What You See?</h2>
-    <p style="color: rgba(255,255,255,0.8); font-family: 'Lora', serif; font-style: italic; margin-bottom: 2rem;">Book your appointment and get in the chair.</p>
-    <a href="booking.html" class="btn" style="background: var(--black); color: var(--white);">Book Now</a>
+  <div class="cta-strip">
+    <h2>Book Your Appointment</h2>
+    <p>(203) 865-2222 · prostylecut@gmail.com</p>
+    <a href="booking.html" class="btn btn-black">Book Now</a>
   </div>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <div class="nav-brand">
-          <span class="pro">PRO</span><span class="style">Style</span>
-        </div>
-        <p>Quality, Excellence &amp; Professionalism since 1996. Downtown New Haven's trusted barbershop.</p>
+        <div class="mast-brand"><span class="pro">PRO</span><span class="sty">Style</span></div>
+        <p>770 State St, New Haven, CT 06511<br>Since 1996</p>
       </div>
-      <div class="footer-links">
+      <div class="footer-nav">
         <h4>Navigate</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -152,16 +90,13 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="footer-contact">
-        <p><strong>770 State St</strong></p>
-        <p>New Haven, CT 06511</p>
-        <p style="margin-top: 0.75rem;"><a href="tel:2038652222">(203) 865-2222</a></p>
+      <div class="footer-contact-col">
+        <h4>Contact</h4>
+        <p><a href="tel:2038652222">(203) 865-2222</a></p>
         <p><a href="mailto:prostylecut@gmail.com">prostylecut@gmail.com</a></p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 ProStyle Haircutting Services. All rights reserved.</span>
-    </div>
+    <div class="footer-bottom">&copy; 2026 ProStyle Haircutting Services</div>
   </footer>
 
 </body>

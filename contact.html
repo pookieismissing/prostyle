@@ -4,148 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — ProStyle Haircutting Services</title>
-  <meta name="description" content="Get in touch with ProStyle Haircutting Services at 770 State St, New Haven, CT 06511. Call (203) 865-2222 or email prostylecut@gmail.com.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="site-nav">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-brand">
-        <span class="pro">PRO</span><span class="style">Style</span>
-      </a>
-      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+  <nav class="masthead">
+    <div class="masthead-inner">
+      <a href="index.html" class="mast-brand"><span class="pro">PRO</span><span class="sty">Style</span></a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
-        <li><a href="booking.html" class="nav-book-btn">Book Now</a></li>
+        <li><a href="booking.html" class="book-link">Book Now</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <div class="page-hero">
-    <h1 class="display-font fade-up">Contact</h1>
-    <p class="fade-up fade-up-delay-1">Get in touch or stop by the shop</p>
-  </div>
+  <header class="page-header">
+    <h1>Contact</h1>
+    <div class="dek">770 State St · New Haven, CT 06511</div>
+  </header>
 
-  <!-- CONTACT INFO + MAP -->
-  <section class="section">
-    <div class="contact-grid">
+  <main class="page-frame">
+    <div class="rule-double"></div>
 
-      <!-- Contact Details -->
-      <div class="contact-info-block">
+    <div class="section contact-pair">
 
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div>
-            <div class="contact-label">Address</div>
-            <div class="contact-value">
-              770 State St<br>
-              New Haven, CT 06511
-            </div>
-            <a href="https://www.google.com/maps/dir/?api=1&destination=ProStyle+Haircutting+Services+770+State+St+New+Haven+CT" target="_blank" rel="noopener" style="font-size: 0.85rem; margin-top: 0.3rem; display: inline-block;">Get Directions &rarr;</a>
-          </div>
+      <!-- LEFT: INFO -->
+      <div>
+
+        <div class="contact-block" style="margin-bottom:1.75rem;">
+          <h4>Address</h4>
+          <p>
+            770 State St<br>
+            New Haven, CT 06511
+          </p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=ProStyle+Haircutting+Services+770+State+St+New+Haven+CT" target="_blank" rel="noopener" style="font-size:0.85rem;">Get Directions →</a>
         </div>
 
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </div>
-          <div>
-            <div class="contact-label">Phone</div>
-            <div class="contact-value"><a href="tel:2038652222" style="color: var(--white);">(203) 865-2222</a></div>
-          </div>
+        <div class="contact-block" style="margin-bottom:1.75rem;">
+          <h4>Phone</h4>
+          <p><a href="tel:2038652222" style="color:var(--ink);">(203) 865-2222</a></p>
         </div>
 
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <div>
-            <div class="contact-label">Email</div>
-            <div class="contact-value"><a href="mailto:prostylecut@gmail.com" style="color: var(--white);">prostylecut@gmail.com</a></div>
-          </div>
+        <div class="contact-block" style="margin-bottom:1.75rem;">
+          <h4>Email</h4>
+          <p><a href="mailto:prostylecut@gmail.com">prostylecut@gmail.com</a></p>
         </div>
 
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div>
-            <div class="contact-label">Hours</div>
-            <div class="contact-value" style="font-size: 0.9rem; line-height: 1.8;">
-              Sun &amp; Mon: Closed<br>
-              Tue: 11am&ndash;3pm <span style="color: var(--cyan); font-size: 0.8rem;">(walk-ins)</span><br>
-              Wed&ndash;Fri: 8am&ndash;8pm <span style="color: var(--cyan); font-size: 0.8rem;">(appt only)</span><br>
-              Sat: 7am&ndash;4pm <span style="color: var(--cyan); font-size: 0.8rem;">(appt + walk-ins 3&ndash;4pm)</span>
-            </div>
-          </div>
+        <div class="contact-block" style="margin-bottom:1.75rem;">
+          <h4>Hours</h4>
+          <p style="font-size:0.9rem;line-height:1.8;">
+            Sun &amp; Mon: Closed<br>
+            Tue: 11am–3pm <span style="color:var(--pewter);font-size:0.8rem;">(walk-ins only)</span><br>
+            Wed–Fri: 8am–8pm <span style="color:var(--pewter);font-size:0.8rem;">(appointment only)</span><br>
+            Sat: 7am–4pm <span style="color:var(--pewter);font-size:0.8rem;">(appointment + walk-ins 3–4pm)</span>
+          </p>
         </div>
+
+        <div class="rule-dotted"></div>
+
+        <p style="margin-top:1rem;font-size:0.88rem;color:var(--slate);">
+          Communicate only through ProStyle's contacts, so no communication is lost.
+        </p>
 
         <!-- Social media placeholder -->
         <!--
-          PLACEHOLDER: Add social media links here once confirmed.
-          Example:
-          <div class="contact-item">
-            <div class="contact-icon">...</div>
-            <div>
-              <div class="contact-label">Follow Us</div>
-              <div class="contact-value">
-                <a href="#">Instagram</a> · <a href="#">Facebook</a>
-              </div>
-            </div>
-          </div>
+        <div class="contact-block" style="margin-top:1.75rem;">
+          <h4>Follow</h4>
+          <p><a href="#">Instagram</a> · <a href="#">Facebook</a></p>
+        </div>
         -->
 
       </div>
 
-      <!-- Map -->
-      <div class="map-embed">
+      <!-- RIGHT: MAP -->
+      <div class="map-frame">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.2!2d-72.923!3d41.308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7d9ce787e7951%3A0xeb35878b3072fb08!2sProStyle%20Haircutting%20Services!5e0!3m2!1sen!2sus!4v1709000000000"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          title="ProStyle Haircutting Services location on Google Maps"
+          title="ProStyle Haircutting Services on Google Maps"
         ></iframe>
       </div>
 
     </div>
-  </section>
 
-  <!-- COMMUNICATION NOTE -->
-  <div style="background: var(--gray-900); padding: 2.5rem 2rem; text-align: center;">
-    <p style="max-width: 600px; margin: 0 auto; color: var(--gray-300); line-height: 1.7;">
-      <strong style="color: var(--cyan);">A note on communication:</strong> To make sure nothing gets lost, please reach out directly through ProStyle's phone number or email rather than third-party messaging platforms.
-    </p>
+  </main>
+
+  <div class="cta-strip">
+    <h2>Book Your Appointment</h2>
+    <p>(203) 865-2222 · prostylecut@gmail.com</p>
+    <a href="booking.html" class="btn btn-black">Book Now</a>
   </div>
 
-  <!-- CTA -->
-  <div style="background: var(--red); padding: 4rem 2rem; text-align: center;">
-    <h2 class="display-font" style="font-size: clamp(2rem, 4vw, 3rem); color: var(--white); margin-bottom: 0.5rem;">Ready to Book?</h2>
-    <p style="color: rgba(255,255,255,0.8); font-family: 'Lora', serif; font-style: italic; margin-bottom: 2rem;">Schedule your appointment online or give us a call.</p>
-    <a href="booking.html" class="btn" style="background: var(--black); color: var(--white);">Book Now</a>
-  </div>
-
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <div class="nav-brand">
-          <span class="pro">PRO</span><span class="style">Style</span>
-        </div>
-        <p>Quality, Excellence &amp; Professionalism since 1996. Downtown New Haven's trusted barbershop.</p>
+        <div class="mast-brand"><span class="pro">PRO</span><span class="sty">Style</span></div>
+        <p>770 State St, New Haven, CT 06511<br>Since 1996</p>
       </div>
-      <div class="footer-links">
+      <div class="footer-nav">
         <h4>Navigate</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -156,16 +119,13 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="footer-contact">
-        <p><strong>770 State St</strong></p>
-        <p>New Haven, CT 06511</p>
-        <p style="margin-top: 0.75rem;"><a href="tel:2038652222">(203) 865-2222</a></p>
+      <div class="footer-contact-col">
+        <h4>Contact</h4>
+        <p><a href="tel:2038652222">(203) 865-2222</a></p>
         <p><a href="mailto:prostylecut@gmail.com">prostylecut@gmail.com</a></p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 ProStyle Haircutting Services. All rights reserved.</span>
-    </div>
+    <div class="footer-bottom">&copy; 2026 ProStyle Haircutting Services</div>
   </footer>
 
 </body>

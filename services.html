@@ -4,148 +4,334 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services — ProStyle Haircutting Services</title>
-  <meta name="description" content="Haircuts, fades, beard trims, shaves, and more at ProStyle Haircutting Services in New Haven, CT.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="site-nav">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-brand">
-        <span class="pro">PRO</span><span class="style">Style</span>
-      </a>
-      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+  <nav class="masthead">
+    <div class="masthead-inner">
+      <a href="index.html" class="mast-brand"><span class="pro">PRO</span><span class="sty">Style</span></a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html" class="active">Services</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="booking.html" class="nav-book-btn">Book Now</a></li>
+        <li><a href="booking.html" class="book-link">Book Now</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <div class="page-hero">
-    <h1 class="display-font fade-up">Services</h1>
-    <p class="fade-up fade-up-delay-1">Every cut with precision, every client with care</p>
-  </div>
+  <header class="page-header">
+    <h1>Services</h1>
+    <div class="dek">ProStyle Haircutting Services · Service Menu</div>
+  </header>
 
-  <!-- SERVICES -->
-  <section class="section">
-    <div class="section-header">
-      <h2>What We Offer</h2>
-      <div class="rule"></div>
-      <p>Pricing available upon booking or by phone</p>
+  <div class="qep-bar"><span>Quality, Excellence &amp; Professionalism &mdash; Makes the Difference &mdash; Since 1996</span></div>
+
+  <main class="page-frame">
+    <div class="rule-double"></div>
+
+    <div style="margin-bottom:1.5rem;">
+      <p style="margin-bottom:0.75rem;">
+        Every service at ProStyle starts with a consultation. Octavious wants to see what you're working with and hear what you're going for before anything else. Bring a reference photo if you have one. If you don't, he'll walk you through the options.
+      </p>
+      <p style="margin-bottom:0.75rem;">
+        Services are organized by what's included. The "Initiator" is your standard full haircut. The "Groomer" adds the beard and mustache. The "Sustainer" is for maintenance between cuts. And the "Looker" line covers chemical services like texturizers and color. Each service has an (A) and (B) option depending on whether you want a fade or an even-length cut. Read the details below or call <a href="tel:2038652222">(203) 865-2222</a> if you have questions about which service fits what you need.
+      </p>
+      <p style="color:var(--pewter);font-size:0.88rem;">
+        Pricing is available when you book online or by phone.
+      </p>
     </div>
 
-    <div class="services-grid">
+    <div class="rule" style="background:var(--red);height:2px;"></div>
 
-      <div class="service-card">
-        <h3>Haircut</h3>
-        <p>A full haircut tailored to your style. Octavious will consult with you on the look you want — bring a reference photo if you have one — and execute with precision.</p>
-        <span class="service-price"><span class="tbd">Call for pricing</span></span>
+    <!-- ===========================
+         THE INITIATOR
+         =========================== -->
+    <div class="service-block">
+      <div class="service-name">The "Initiator"</div>
+      <div class="service-desc">A Full Shampoo &amp; Haircut. The Beard &amp; Mustache are *NOT included here.</div>
+
+      <div class="service-option">
+        <div class="service-option-label popular">(A) Service</div>
+        <ul class="service-list">
+          <li>A Shampoo (unless shampooed within the hour before arrival)</li>
+          <li><strong>ANY Fade</strong>, blend, taper, or skin sides</li>
+          <li>A full scissor, precision haircut</li>
+          <li>Both the top and sides are serviced and shortened</li>
+          <li>A clipper edge and a warm razor edge (unless the razor is *not desired)</li>
+          <li><em>BEARD &amp; MUSTACHE ARE NOT SERVICED.</em></li>
+        </ul>
+        <div class="service-note">*Shampoo is required and included in the "Full Haircut" cost.</div>
       </div>
 
-      <div class="service-card">
-        <h3>Fade</h3>
-        <p>Clean, sharp fades from skin to scissor. Whether you need a low, mid, or high fade, every blend is seamless and every line is crisp.</p>
-        <span class="service-price"><span class="tbd">Call for pricing</span></span>
+      <div class="service-option">
+        <div class="service-option-label">(B) Service</div>
+        <ul class="service-list">
+          <li>Shampoo (unless shampooed within the hour of arrival)</li>
+          <li><strong>*No Fade, taper, or blend</strong></li>
+          <li>The top and side are even and the same length</li>
+          <li>Brush length</li>
+          <li>Buzz</li>
+          <li>Bald, shaved head</li>
+          <li>*Exception: Sides only, taper, fade, blend, or skinned sides. (*A shampoo &amp; head top are <u>NOT</u> serviced with this option)</li>
+          <li>A clipper edge and a warm razor edge (unless the razor is *not desired)</li>
+          <li><em>BEARD &amp; MUSTACHE ARE NOT SERVICED.</em></li>
+        </ul>
+        <div class="service-note">*Shampoo is required and included in the "Full Haircut" cost.</div>
       </div>
-
-      <div class="service-card">
-        <h3>Beard Trim &amp; Shape</h3>
-        <p>Detailed beard sculpting and trimming to complement your cut. Neckline, cheek line, and mustache — all cleaned up to a sharp finish.</p>
-        <span class="service-price"><span class="tbd">Call for pricing</span></span>
-      </div>
-
-      <div class="service-card">
-        <h3>Shave</h3>
-        <p>A professional shave for a clean, smooth look. Attention to skin care and comfort throughout the process.</p>
-        <span class="service-price"><span class="tbd">Call for pricing</span></span>
-      </div>
-
-      <div class="service-card">
-        <h3>Haircut &amp; Shave Combo</h3>
-        <p>The complete package — a full haircut paired with a professional shave. Walk out looking and feeling your best from every angle.</p>
-        <span class="service-price"><span class="tbd">Call for pricing</span></span>
-      </div>
-
-      <div class="service-card">
-        <h3>Lineup / Shape-Up</h3>
-        <p>Precision edge work to keep your hairline, temples, and sideburns sharp between full cuts. Quick, clean, and exact.</p>
-        <span class="service-price"><span class="tbd">Call for pricing</span></span>
-      </div>
-
     </div>
 
-    <p style="text-align: center; color: var(--gray-400); margin-top: 2.5rem; font-size: 0.9rem;">
-      <!-- PLACEHOLDER: Replace "Call for pricing" with actual prices once confirmed with Octavious. -->
-      For specific pricing, call <a href="tel:2038652222">(203) 865-2222</a> or check the <a href="booking.html">online booking page</a>.
-    </p>
-  </section>
+    <!-- ===========================
+         THE CHILD INITIATOR
+         =========================== -->
+    <div class="service-block">
+      <div class="service-name">The "Child Initiator"</div>
+      <div class="service-desc">A Full Shampoo Haircut.</div>
+
+      <div class="service-option">
+        <div class="service-option-label popular">(A) Service</div>
+        <ul class="service-list">
+          <li>Shampoo (unless shampooed within the hour before arrival)</li>
+          <li><strong>ANY Fade</strong>, blend, taper, or skin sides</li>
+          <li>A full scissor precision haircut</li>
+          <li>Both the top and sides are serviced and shortened</li>
+          <li>A clipper edge and a warm razor edge (unless the razor is *not desired)</li>
+        </ul>
+        <div class="service-note">*Shampoo is required and included in the "Full Haircut" cost.</div>
+      </div>
+
+      <div class="service-option">
+        <div class="service-option-label">(B) Service</div>
+        <ul class="service-list">
+          <li>Shampoo (unless shampooed within the hour of arrival)</li>
+          <li><strong>*No Fade, taper, or blend</strong></li>
+          <li>The top and side are even and the same length</li>
+          <li>Brush length</li>
+          <li>Buzz</li>
+          <li>*Exception: Sides only, taper, fade, blend, or skinned sides. (*A shampoo &amp; head top is <u>NOT</u> serviced with this option.)</li>
+          <li>A clipper edge and a warm razor edge (unless the razor is *not desired)</li>
+        </ul>
+        <div class="service-note">*Shampoo is required and included in the "Full Haircut" cost.</div>
+      </div>
+    </div>
+
+    <!-- ===========================
+         THE GROOMER
+         =========================== -->
+    <div class="service-block">
+      <div class="service-name">The "Groomer"</div>
+      <div class="service-desc">A Full Shampoo Haircut, with the Beard &amp; Mustache *included.</div>
+
+      <div class="service-option">
+        <div class="service-option-label popular">(A) Service</div>
+        <ul class="service-list">
+          <li>Shampoo (unless shampooed within the hour before arrival)</li>
+          <li><strong>ANY Fade</strong>, blend, taper, or skin sides</li>
+          <li>A full scissor precision haircut</li>
+          <li>Both the sides and top are serviced and shortened</li>
+          <li>A clipper edge and a warm razor edge (unless the razor is *not desired)</li>
+          <li>Beard, mustache, or both are <u>included</u></li>
+        </ul>
+        <div class="service-note">*Shampoo is required and included in the "Full Haircut" cost.</div>
+      </div>
+
+      <div class="service-option">
+        <div class="service-option-label">(B) Service</div>
+        <ul class="service-list">
+          <li>Shampoo (unless shampooed within the hour before arrival)</li>
+          <li><strong>*No Fade, taper, or blend</strong></li>
+          <li>Top and side are even and the same length</li>
+          <li>Brush length</li>
+          <li>Buzz</li>
+          <li>A clipper edge and a warm razor edge (*unless the razor is NOT desired)</li>
+          <li>Bald, shaved head</li>
+          <li>*Exception: Sides only, taper, fade, blend, or skinned sides. (*A shampoo &amp; head top are <u>NOT</u> serviced with this option)</li>
+          <li>Beard, mustache, or both are <u>included</u></li>
+        </ul>
+        <div class="service-note">*The shampoo is required and included in the "Full Haircut" cost.</div>
+      </div>
+    </div>
+
+    <!-- ===========================
+         THE SUSTAINER
+         =========================== -->
+    <div class="service-block">
+      <div class="service-name">The "Sustainer"</div>
+      <div class="service-desc">ONLY an Edge, Outline Service. This is *NOT a Full Haircut service.</div>
+
+      <div class="service-option">
+        <div class="service-option-label">(A) Service — 3 features included</div>
+        <div class="service-note-important">Beard &amp; Mustache *included.</div>
+        <ul class="service-list">
+          <li>A clipper edge line and a warm razor edge (unless the razor is *not desired)</li>
+          <li>A light trim of uneven hairs. (*<u>NOT</u> a Full Haircut and no shortening of length)</li>
+          <li>Beard, mustache, or both are *<u>included</u>.</li>
+          <li>A Shampoo is <u>optional</u> and is *not required as with a Full Haircut.</li>
+        </ul>
+      </div>
+
+      <div class="service-option">
+        <div class="service-option-label">(B) Service — 2 features included</div>
+        <div class="service-note-important">Edge Outline, OR Beard and Mustache are serviced. *This is NOT a full haircut service.</div>
+        <ul class="service-list">
+          <li><strong>*PLEASE NOTE:</strong> This service is a choice of numbers 2 or 3.</li>
+          <li>A clipper edge line and a warm razor (unless the razor is *not desired) &amp; a light trim of uneven hairs. (*NOT a Full Haircut and no shortening of length).</li>
+          <li>A clipper edge line and a warm razor edge (unless the razor is *not desired) of the Beard, mustache, or both, &amp; trimming/shaping the hair. (*Beards 1/2 inch or longer)</li>
+          <li>A Shampoo is <u>optional</u> and *not required as with a Full Haircut for number 2 of this service.</li>
+        </ul>
+      </div>
+
+      <div class="service-option">
+        <div class="service-option-label">(C) Service — 1 feature included</div>
+        <div class="service-note-important">ONLY an Edge, Outline, or other individual service. *This is NOT a full haircut service.</div>
+        <ul class="service-list">
+          <li><strong>*PLEASE NOTE:</strong> This service is a choice of numbers 2, 3, or 4. This is *NOT a combined service.</li>
+          <li>The hairline clipper edge and a warm razor edge (unless the razor is *not desired). (this is ONLY an edge line)</li>
+          <li>Eyebrows *ONLY, by razor ($6 when included with a full haircut service)</li>
+          <li>The Beard, mustache, or both line. (this number is ONLY an edge line)</li>
+          <li>A Shampoo and conditioner service *ONLY</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===========================
+         THE LOOKER
+         =========================== -->
+    <div class="service-block">
+      <div class="service-name">The "Looker"</div>
+      <div class="service-desc">A Chemical full Shampoo and Haircut service. The Beard and Mustache are *NOT included here.</div>
+
+      <div class="service-option">
+        <div class="service-option-label popular">(A) Service</div>
+        <ul class="service-list">
+          <li>Texturizer or Color application</li>
+          <li><strong>ANY Fade</strong>, blend, taper, or skin sides</li>
+          <li>A full scissor precision haircut</li>
+          <li>Both the top and sides are serviced and shortened</li>
+          <li>A clipper edge and a warm razor edge (unless the razor is *not desired)</li>
+          <li><em>BEARD &amp; MUSTACHE ARE NOT SERVICED.</em></li>
+        </ul>
+      </div>
+
+      <div class="service-option">
+        <div class="service-option-label">(B) Service</div>
+        <ul class="service-list">
+          <li>Texturizer or Color application</li>
+          <li><strong>*No Fade, taper, or blend</strong></li>
+          <li>Top and side are even and the same length</li>
+          <li>Brush length</li>
+          <li>Buzz</li>
+          <li>A clipper edge and a warm razor edge (unless the razor is *not desired)</li>
+          <li>*Exception: Sides only, taper, fade, blend, or skinned sides. (head top is NOT serviced with this option)</li>
+          <li><em>BEARD &amp; MUSTACHE ARE NOT SERVICED.</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===========================
+         THE LOOKER+
+         =========================== -->
+    <div class="service-block">
+      <div class="service-name">The "Looker +"</div>
+      <div class="service-desc">A Chemical full Shampoo Haircut service, with the Beard &amp; Mustache *<u>included</u>.</div>
+
+      <div class="service-option">
+        <div class="service-option-label popular">(A) Service</div>
+        <ul class="service-list">
+          <li>Texturizer or Color application</li>
+          <li><strong>ANY Fade</strong>, blend, taper, or skin sides</li>
+          <li>A full scissor precision haircut</li>
+          <li>Both the top and sides are serviced</li>
+          <li>Beard, mustache, or both are *<u>included</u></li>
+          <li>A clipper edge and a warm razor edge (unless the razor is *not desired)</li>
+        </ul>
+      </div>
+
+      <div class="service-option">
+        <div class="service-option-label">(B) Service</div>
+        <ul class="service-list">
+          <li>Texturizer or Color application</li>
+          <li><strong>*No Fade, taper, or blend</strong></li>
+          <li>The Top and side are even and the same length</li>
+          <li>Brush length</li>
+          <li>Buzz</li>
+          <li>Beard, mustache, or both are <u>included</u></li>
+          <li>A clipper edge and a warm razor edge (unless the razor is *not desired)</li>
+          <li>*Exception: Sides only, taper, fade, blend, or skinned sides. (head top is NOT serviced with this option)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===========================
+         THE LOOKER+/SUSTAINER
+         =========================== -->
+    <div class="service-block">
+      <div class="service-name">The "Looker+/Sustainer"</div>
+      <div class="service-desc">A Chemical service with an Edge Line &amp; Light Trim.</div>
+
+      <div class="service-option">
+        <div class="service-option-label">(A) Service — 4 features included</div>
+        <div class="service-note-important">Texturizer or Color with Edge, Light Trim. Beard and Mustache *<u>included</u>.</div>
+        <ul class="service-list">
+          <li>Texturizer or Color application</li>
+          <li>A clipper edge line and a warm razor edge (unless the razor is *not desired)</li>
+          <li>Light trim of the uneven hairs. (*NOT A FULL HAIRCUT and no shortening of length)</li>
+          <li>The beard, mustache, or both are *<u>included</u></li>
+        </ul>
+      </div>
+
+      <div class="service-option">
+        <div class="service-option-label">(B) Service — 3 features included</div>
+        <div class="service-note-important">Chemical service with an *EDGE, OUTLINE only. The Beard and Mustache are *NOT included here.</div>
+        <ul class="service-list">
+          <li><strong>PLEASE NOTE:</strong> This service is a choice of numbers 3 OR 4.</li>
+          <li>Texturizer or Color application</li>
+          <li>A clipper edge line and a warm razor (unless the razor is *not desired) &amp; a light trim of uneven hairs. (*NOT a Full Haircut and no shortening of length).</li>
+          <li>A clipper edge line and a warm razor edge (unless the razor is *not desired) of the Beard, mustache, or both with trimming/shaping the hair. (*Beards 1/2 inch or longer)</li>
+        </ul>
+      </div>
+
+      <div class="service-option">
+        <div class="service-option-label">(C) Service — 2 features included</div>
+        <div class="service-note-important">Texturizer or Color Chemical Service of the Beard and Mustache *<u>only</u>.</div>
+        <ul class="service-list">
+          <li>Texturizer or Color application of Beard, mustache, or both *<u>ONLY</u></li>
+          <li>A clipper edge line and a warm razor edge (unless the razor is *not desired). (this is *ONLY an edge line)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rule-double"></div>
+
+    <div class="section" style="text-align:center;">
+      <p style="color:var(--pewter);font-size:0.9rem;margin-bottom:1rem;">For pricing, call <a href="tel:2038652222">(203) 865-2222</a> or book online.</p>
+      <a href="booking.html" class="btn btn-red">Book an Appointment</a>
+    </div>
+
+  </main>
 
   <!-- TERRIFIC TUESDAY -->
-  <div style="background: linear-gradient(135deg, var(--cyan-dark), #006064); padding: 2.5rem 2rem; text-align: center;">
-    <h3 class="display-font" style="font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--white); letter-spacing: 0.1em;">Terrific Tuesday Savings</h3>
-    <p style="font-family: 'Lora', serif; font-style: italic; color: rgba(255,255,255,0.8); margin-top: 0.5rem; font-size: 1.05rem;">Walk-ins welcome every Tuesday, 11am&ndash;3pm &middot; Up to 20% off all services</p>
+  <div class="tuesday-banner">
+    <h3>Terrific Tuesday Savings</h3>
+    <p>Walk-in's only, 11am – 3pm · Up to 20% off</p>
   </div>
 
-  <!-- POLICIES -->
-  <section class="section">
-    <div class="section-header">
-      <h2>Booking Policies</h2>
-      <div class="rule"></div>
-    </div>
-    <ol class="policies-list">
-      <li>
-        <span class="policy-num">1</span>
-        <span class="policy-text">
-          <strong>Book in advance</strong> to ensure a service is available when you need it.
-        </span>
-      </li>
-      <li>
-        <span class="policy-num">2</span>
-        <span class="policy-text">
-          <strong>Cancel at least 12 hours before</strong> your appointment so the slot can be offered to another client.
-        </span>
-      </li>
-      <li>
-        <span class="policy-num">3</span>
-        <span class="policy-text">
-          <strong>Communicate through ProStyle's contacts only</strong> — <a href="tel:2038652222">(203) 865-2222</a> or <a href="mailto:prostylecut@gmail.com">prostylecut@gmail.com</a>.
-        </span>
-      </li>
-      <li>
-        <span class="policy-num">4</span>
-        <span class="policy-text">
-          <strong>Walk-in windows:</strong> Tuesdays 11am&ndash;3pm and Saturdays 3&ndash;4pm (limit 5 clients).
-        </span>
-      </li>
-    </ol>
-  </section>
-
-  <!-- CTA -->
-  <div style="background: var(--red); padding: 4rem 2rem; text-align: center;">
-    <h2 class="display-font" style="font-size: clamp(2rem, 4vw, 3rem); color: var(--white); margin-bottom: 0.5rem;">Book Your Cut</h2>
-    <p style="color: rgba(255,255,255,0.8); font-family: 'Lora', serif; font-style: italic; margin-bottom: 2rem;">Schedule online through Square or call the shop directly.</p>
-    <a href="booking.html" class="btn" style="background: var(--black); color: var(--white);">Book Now</a>
+  <div class="cta-strip">
+    <h2>Book Your Appointment</h2>
+    <p>(203) 865-2222 · prostylecut@gmail.com</p>
+    <a href="booking.html" class="btn btn-black">Book Now</a>
   </div>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <div class="nav-brand">
-          <span class="pro">PRO</span><span class="style">Style</span>
-        </div>
-        <p>Quality, Excellence &amp; Professionalism since 1996. Downtown New Haven's trusted barbershop.</p>
+        <div class="mast-brand"><span class="pro">PRO</span><span class="sty">Style</span></div>
+        <p>770 State St, New Haven, CT 06511<br>Since 1996</p>
       </div>
-      <div class="footer-links">
+      <div class="footer-nav">
         <h4>Navigate</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -156,16 +342,13 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="footer-contact">
-        <p><strong>770 State St</strong></p>
-        <p>New Haven, CT 06511</p>
-        <p style="margin-top: 0.75rem;"><a href="tel:2038652222">(203) 865-2222</a></p>
+      <div class="footer-contact-col">
+        <h4>Contact</h4>
+        <p><a href="tel:2038652222">(203) 865-2222</a></p>
         <p><a href="mailto:prostylecut@gmail.com">prostylecut@gmail.com</a></p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 ProStyle Haircutting Services. All rights reserved.</span>
-    </div>
+    <div class="footer-bottom">&copy; 2026 ProStyle Haircutting Services</div>
   </footer>
 
 </body>
